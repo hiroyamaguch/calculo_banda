@@ -1,4 +1,4 @@
-'''bash
+```bash
 # Calculo de Banda
 
 Trabalho realizado para aula de IHM.
