@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+body {
+  background-color: #F3F3F3;
+
+  color: #010D29;
+  font-family: 'Roboto Slab', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.Container {
+  height: 100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: stretch;
+}
+
+.Container img {
+  flex: 1;
+}
+
+.Content h1 {
+  font-size: 58px;
+  margin-bottom: auto;
+}
+
+.Content {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+
+  width: 70%;
+  min-width: 700px;
 }
 
-.App-link {
-  color: #61dafb;
+.Content form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Content form a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  margin-top: 24px;
+  color: #1C47DE;
+}
+
+.Content form a:hover {
+  color: #04236D;
+  transition: color 0.2s;
+}
+
+.Content form a svg {
+  margin-left: 16px;
+}
+
+.Content > form > input {
+  margin-bottom: 16px;
+
+  width: 500px;
+  border: none;
+  height: 30px;
+  border-radius: 16px;
+  padding: 0 16px;
+}
+
+.Content button {
+  background-color: #010D29;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 300px;
+
+  border-radius: 8px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.Content button:hover {
+  background-color: #04236D;
+  transition: background-color 0.2s;
+}
+
+.radioInputs { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.radioInputs p {
+  margin-right: 32px;
+}
+
+#devicesInput {
+  width: 50px;
+  border: none;
+  height: 30px;
+  border-radius: 16px;
+  padding: 0 16px;
 }
