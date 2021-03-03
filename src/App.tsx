@@ -1,22 +1,13 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback } from 'react';
 import {FiArrowRight} from 'react-icons/fi';
 
 import Background from './background.png';
 import './App.css';
 
-interface SubmitData {
-  devices: number;
-  gamers: boolean;
-  stream: boolean;
-}
-
-function App() {
-  const [banda, setBanda] = useState(0);
-
+const App: React.FC = () => {
   const handleOnSubmit = useCallback((event) => {
     event.preventDefault();
     let resultadoBanda = 0;
-
 
     const {devices, stream, gamer} = event.target;
 
@@ -35,7 +26,6 @@ function App() {
     resultadoBanda += devices.value * 5;
 
     alert(`Sua velocidade Ideal é de ${resultadoBanda}MB`)
-    setBanda(resultadoBanda);
   },[]);
 
   return (
@@ -71,7 +61,7 @@ function App() {
   
           <button type="submit">Calcular</button>
 
-          <a href="#">
+          <a href="/">
             Análise Avançada
             <FiArrowRight size="20"/>
           </a>
